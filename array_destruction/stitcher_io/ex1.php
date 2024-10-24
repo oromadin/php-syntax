@@ -8,14 +8,19 @@ list($a, $b, $c) = $array;
 // Or the shorthand syntax:
 [$a, $b, $c] = $array;
 
+var_dump(compact(['a', 'b', 'c']));
 // $a = 1
 // $b = 2
 // $c = 3
-var_dump(compact(['a', 'b', 'c']));
 
-[, , $d] = $array;
+//Skip elements
+[, ,$d] = $array;
+list( , $x) = $array;
+[$f] = $array;
 
 // $d = 3
-// Also note that list will always start at index 0. Take for example the following array:
-
+// $x = 2
+// $f = 1
 var_dump($d);
+var_dump($x);
+var_dump($f);
