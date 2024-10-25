@@ -1,0 +1,1 @@
+https://stitcher.io/blog/array-destructuring-with-list-in-php

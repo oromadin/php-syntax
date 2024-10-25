@@ -39,6 +39,3 @@ foreach ($people as $p) {
     $zip = $p['address']['zip'] ?? null;
     echo "Zip code: $zip\n";   
 }
-
-// Zip code: 12345
-// Zip code: 67890
