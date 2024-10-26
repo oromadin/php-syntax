@@ -37,5 +37,5 @@ foreach ($people as ['address' => ['zip' => $zip]]) {
 
 foreach ($people as $p) {
     $zip = $p['address']['zip'] ?? null;
-    echo "Zip code: $zip\n";   
+    echo "Zip code: $zip\n";
 }

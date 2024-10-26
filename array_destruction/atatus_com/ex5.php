@@ -12,11 +12,11 @@ echo "Customer data before swap: \n";
 print_r($customer);
 
 [
-	$customer['email'], 
-	$customer['phone']
+    $customer['email'],
+    $customer['phone']
 ] = [
-	$customer['phone'], 
-	$customer['email']
+    $customer['phone'],
+    $customer['email']
 ];
 
 echo "Customer data after swap: \n";

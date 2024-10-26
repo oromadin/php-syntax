@@ -2,7 +2,8 @@
 
 // Extracting values from function returns
 
-function getPerson() {
+function getPerson()
+{
     return [
         'name' => 'John Doe',
         'age' => 30,

@@ -1,15 +1,15 @@
 <?php
 
 $assoc_array = [
-	'name' => 'John',
-	'age' => 30, 
-	'gender' => 'male'
+    'name' => 'John',
+    'age' => 30,
+    'gender' => 'male'
 ];
 
 list(
-	'name' => $name, 
-	'age' => $age, 
-	'gender' => $gender
+    'name' => $name,
+    'age' => $age,
+    'gender' => $gender
 ) = $assoc_array;
 
 var_dump(compact(['name', 'age', 'gender']));
@@ -24,9 +24,9 @@ var_dump(compact(['name', 'age', 'gender']));
 // }
 
 list(
-	'age' => $a, 
-	'name' => $n, 
-	'gender' => $g
+    'age' => $a,
+    'name' => $n,
+    'gender' => $g
 ) = $assoc_array;
 
 var_dump(compact(['n', 'g', 'a']));
@@ -41,9 +41,9 @@ var_dump(compact(['n', 'g', 'a']));
 // }
 
 [
-	'age' => $x, 
-	'name' => $y, 
-	'gender' => $z
+    'age' => $x,
+    'name' => $y,
+    'gender' => $z
 ] = $assoc_array;
 
 var_dump(compact(['x', 'y', 'z']));
