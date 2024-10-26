@@ -7,9 +7,3 @@ $array = [
 ];
 
 ['c' => $c, 'a' => $a] = $array;
-
-var_dump($c);
-var_dump($a);
-
-// $c = 3;
-// $a = 1;

@@ -2,25 +2,10 @@
 
 $array = [1, 2, 3];
 
-// Using the list syntax:
 list($a, $b, $c) = $array;
+[$a1, $b1, $c1] = $array;
 
-// Or the shorthand syntax:
-[$a, $b, $c] = $array;
+list(, $d) = $array;
+[, , $d1] = $array;
 
-var_dump(compact(['a', 'b', 'c']));
-// $a = 1
-// $b = 2
-// $c = 3
-
-//Skip elements
-[, ,$d] = $array;
-list(, $x) = $array;
-[$f] = $array;
-
-// $d = 3
-// $x = 2
-// $f = 1
-var_dump($d);
-var_dump($x);
-var_dump($f);
+[$a2] = $array;
