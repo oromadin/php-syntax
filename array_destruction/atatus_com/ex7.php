@@ -1,6 +1,5 @@
 <?php
 
-// Extracting values from function returns
 
 function getPerson()
 {
@@ -12,6 +11,3 @@ function getPerson()
 }
 
 ['name' => $name, 'age' => $age] = getPerson();
-
-echo "Name: $name\n";
-echo "Age: $age\n";

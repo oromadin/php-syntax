@@ -1,7 +1,5 @@
 <?php
 
-// Extracting values from nested arrays
-
 $people = [
     [
         'name' => 'John Doe',
@@ -27,15 +25,11 @@ $people = [
             'street' => 'im. 26 Bakinskih komissarov',
             'city' => 'Oklahoma Springs',
             'state' => 'OA',
+            'zip' => '12345',
         ],
     ]
 ];
 
 foreach ($people as ['address' => ['zip' => $zip]]) {
-    echo "Zip code: $zip\n";
-}
-
-foreach ($people as $p) {
-    $zip = $p['address']['zip'] ?? null;
-    echo "Zip code: $zip\n";
+    printf("zip code: %s\n", $zip);
 }
