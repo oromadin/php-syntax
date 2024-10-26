@@ -12,7 +12,7 @@ var_dump($directory);
 // $directory = "/users/test"
 
 [
-    'path' => $path, 
+    'path' => $path,
     'query' => $query,
 ] = parse_url('https://stitcher.io/blog');
 

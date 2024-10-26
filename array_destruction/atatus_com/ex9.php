@@ -2,11 +2,13 @@
 
 // Extracting values from objects
 
-class Person {
+class Person
+{
     public string $name;
     public int $age;
 
-    public function __construct(string $name, int $age) {
+    public function __construct(string $name, int $age)
+    {
         $this->name = $name;
         $this->age = $age;
     }

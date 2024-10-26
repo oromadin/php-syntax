@@ -1,6 +1,6 @@
 <?php
-	
-$array = [1, 2, 3]; 
+
+$array = [1, 2, 3];
 
 // Using the list syntax:
 list($a, $b, $c) = $array;
@@ -15,7 +15,7 @@ var_dump(compact(['a', 'b', 'c']));
 
 //Skip elements
 [, ,$d] = $array;
-list( , $x) = $array;
+list(, $x) = $array;
 [$f] = $array;
 
 // $d = 3
