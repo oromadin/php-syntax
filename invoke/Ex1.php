@@ -1,21 +1,11 @@
 <?php
 
-class CallableClass
+class X
 {
-    public function __invoke($x)
+    public function __invoke()
     {
-        var_dump($x);
-    }
-
-    public function output($y)
-    {
-        var_dump($y);
+        return 10;
     }
 }
 
-$obj = new CallableClass();
-
-$obj(5);
-$obj->output(13);
-
-var_dump(is_callable($obj));
+$x = new X();
