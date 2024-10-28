@@ -14,9 +14,9 @@ class Sort
         return $a[$this->key] <=> $b[$this->key];
     }
 
-    public function output() {
+    // public function output() {
         
-    }
+    // }
     
 }
 
