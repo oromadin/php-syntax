@@ -2,15 +2,15 @@
 
 class CallableClass
 {
-  public function __invoke($x)
-  {
-    var_dump($x);
-  } 
+    public function __invoke($x)
+    {
+        var_dump($x);
+    }
 
-  public function output($y)
-  {
-    var_dump($y);    
-  }
+    public function output($y)
+    {
+        var_dump($y);
+    }
 }
 
 $obj = new CallableClass();
