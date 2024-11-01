@@ -1,6 +1,6 @@
 <?php
 
-class ArrayAll() {
+class ArrayAll {
 
   public const ITEMS = [
       'a' => 'dog',
@@ -11,14 +11,17 @@ class ArrayAll() {
       'f' => 'elephant'
   ];
 
-  public function arrayAny() {
-      $flag = false;
+  public function arrayAll() {
+      $flag = true;
 
       foreach (self::ITEMS as $item) {
-          if (strlen($item) > 5) {
-              $flag = true;
+          if (!(strlen($item) > 5)) {
+              $flag = false;
           }
       }
       return $flag;
   }
 }
+
+$example = new ArrayAll();
+var_dump($example->arrayAll());

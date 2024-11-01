@@ -1,6 +1,6 @@
 <?php
 
-class ArrayAny() {
+class ArrayAny {
   
   public const ITEMS = [
       'a' => 'dog',
@@ -21,5 +21,7 @@ class ArrayAny() {
       }
       return $flag;
   }
-  
 }
+
+$example = new ArrayAny();
+var_dump($example->arrayAny());
