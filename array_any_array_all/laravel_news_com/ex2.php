@@ -1,5 +1,7 @@
 <?php
 
-// Check, if any animal name is shorter than 3 letters.
+require_once 'lib/array_any.php';
+$animals = include 'data/animals.php';
 
-return array_any(fn ($name) => strlen($name) < 3, ANIMALS);
+// Check, if any animal name is shorter than 3 letters.
+return array_any(fn ($name) => strlen($name) < 3, $animals);

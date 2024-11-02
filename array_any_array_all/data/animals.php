@@ -1,10 +1,3 @@
 <?php
 
-const ANIMALS = [
-    'dog',
-    'cat',
-    'cow',
-    'duck',
-    'goose',
-    'elephant'
-];
+return ['dog', 'cat', 'cow', 'duck', 'goose', 'elephant'];
