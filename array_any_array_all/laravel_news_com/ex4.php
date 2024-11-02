@@ -5,8 +5,6 @@
 require_once __DIR__ . '/array_all.php';
 require_once __DIR__ . '/data.php';
 
-function isLongerThenFive(string $str) {
+function is_longer_then_five(string $str) {
   return strlen($str) > 5;
 }
-
-var_dump(arrayAll('isLongerThenFive', ITEMS));

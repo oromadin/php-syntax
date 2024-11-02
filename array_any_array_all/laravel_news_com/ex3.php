@@ -5,8 +5,6 @@
 require_once __DIR__ . '/array_all.php';
 require_once __DIR__ . '/data.php';
 
-function isShoterThenTwelve(string $str) {
+function is_shoter_then_twelve(string $str) {
   return strlen($str) < 12;
 }
-
-var_dump(arrayAll('isShoterThenTwelve', ITEMS));
