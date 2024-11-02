@@ -1,0 +1,9 @@
+{
+    "autoload": {
+        "files": [
+            "lib/array_all.php",
+            "lib/array_any.php",
+            "data/animals.php"
+        ]
+    }
+}
