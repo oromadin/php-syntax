@@ -1,27 +1,13 @@
 <?php
 
-class ArrayAll {
-
-  public const ITEMS = [
-      'a' => 'dog',
-      'b' => 'cat',
-      'c' => 'cow',
-      'd' => 'duck',
-      'e' => 'goose',
-      'f' => 'elephant'
-  ];
-
-  public function arrayAll() {
-      $flag = true;
-
-      foreach (self::ITEMS as $item) {
-          if (!(strlen($item) > 5)) {
-              $flag = false;
-          }
-      }
-      return $flag;
-  }
+/**
+ * Returns true if the given predicate is true for all elements.
+ */
+function arrayAll(callable $callback, array $items) {
+    foreach ($items as $item) {
+        if(!$callback($item)) {
+            return false;
+        }
+    }
+    return true;
 }
-
-$example = new ArrayAll();
-var_dump($example->arrayAll());
