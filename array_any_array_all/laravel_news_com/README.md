@@ -1,1 +1,0 @@
-https://laravel-news.com/php-8-4-array-find-functions#content-the-arrayany-and-arrayall-functions
