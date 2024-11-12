@@ -1,0 +1,1 @@
+https://php.watch/articles/php-ternary-and-coalescing
