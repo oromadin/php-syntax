@@ -1,14 +1,11 @@
 <?php
 
-require_once __DIR__ . "ex8.php";
+require_once __DIR__ . "/ex8.php";
   
-class MyTrait
+class WithTrait
 {
-  use MyTrait;
-
-  public function X()
-  {
-    echo $this->str;
-  }
-  
+  use MyTrait;  
 }
+
+$x = new WithTrait();
+echo $x->str;
