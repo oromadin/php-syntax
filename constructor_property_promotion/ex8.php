@@ -4,7 +4,7 @@
 
 trait MyTrait
 {
-  public function __construct(public string $str = 'trait')
-  {
-  }
+    public function __construct(public string $str = 'trait')
+    {
+    }
 }

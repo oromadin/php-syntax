@@ -4,7 +4,7 @@
 
 class MyDTO
 {
-  public function __construct(public $untyped)
-  {
-  }
+    public function __construct(public $untyped)
+    {
+    }
 }

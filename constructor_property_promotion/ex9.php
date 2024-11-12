@@ -4,7 +4,7 @@
 
 class Short
 {
-  public function __construct(public string ...$a)
-  {
-  }
+    public function __construct(public string ...$a)
+    {
+    }
 }

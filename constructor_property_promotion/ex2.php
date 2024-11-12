@@ -5,18 +5,18 @@
 // Default propery value set on the method argument, not on class propery
 class ShortSyntax
 {
-  public function __construct(public string $name = 'Brent')
-  {
-  }
+    public function __construct(public string $name = 'Brent')
+    {
+    }
 }
 
 // At first transform to normal syntax, then execute
 class NormalSyntax
 {
-  public string $name;
+    public string $name;
 
-  public function __construct(string $name = 'Brent')
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name = 'Brent')
+    {
+        $this->name = $name;
+    }
 }

@@ -4,9 +4,9 @@
 
 class MyClass
 {
-  public string $a;
+    public string $a;
 
-  public function __construct(public string $a)
-  {
-  }
+    public function __construct(public string $a)
+    {
+    }
 }

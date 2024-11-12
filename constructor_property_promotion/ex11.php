@@ -1,10 +1,10 @@
 <?php
 
 require_once __DIR__ . "/ex8.php";
-  
+
 class WithTrait
 {
-  use MyTrait;  
+    use MyTrait;
 }
 
 $x = new WithTrait();
