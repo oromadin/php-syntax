@@ -29,3 +29,7 @@ $people = [
 echo "<pre>";
 print_r(array_column($people, 'name'));
 echo "</pre>";
+
+echo "<pre>";
+print_r(array_column($people, null));
+echo "</pre>";
