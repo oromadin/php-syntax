@@ -27,13 +27,3 @@ $first_names = array_column($records, 'first_name');
 echo "<pre>";
 print_r($first_names);
 echo "</pre>";
-
-$first_names = array_column($records, null, 'id');
-echo "<pre>";
-print_r($first_names);
-echo "</pre>";
-
-$last_names = array_column($records, 'last_name', 'first_name');
-echo "<pre>";
-print_r($last_names);
-echo "</pre>";

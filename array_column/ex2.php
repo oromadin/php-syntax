@@ -1,35 +1,13 @@
 <?php
 
-class Person
-{
-    private $name;
+require_once 'ex1.php';
 
-    public function __construct(string $name)
-    {
-        $this->name = $name;
-    }
-
-    public function __get($prop)
-    {
-        return $this->$prop;
-    }
-
-    public function __isset($prop) : bool
-    {
-        return isset($this->$prop);
-    }
-}
-
-$people = [
-    new Person('Fred'),
-    new Person('Jane'),
-    new Person('John'),
-];
-
+$first_names = array_column($records, null, 'id');
 echo "<pre>";
-print_r(array_column($people, 'name'));
+print_r($first_names);
 echo "</pre>";
 
+$last_names = array_column($records, 'last_name', 'first_name');
 echo "<pre>";
-print_r(array_column($people, null));
+print_r($last_names);
 echo "</pre>";
