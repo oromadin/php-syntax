@@ -1,0 +1,1 @@
+https://www.php.net/manual/ru/function.array-column.php
