@@ -19,3 +19,12 @@ list($a1, $b1, $c1) = $arr;
 
 echo $a1 . $b1 . $c1;
 echo '<br>';
+
+$x = 4;
+$y = 5;
+
+list($x, $y) = [$y, $x];
+var_dump($x, $y);
+
+[$y, $x] = [$x, $y];
+var_dump($x, $y);
