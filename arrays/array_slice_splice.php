@@ -4,51 +4,51 @@
 
 $a = [1, 2, 3, 4, 5, 6, 7];
 
-// echo '<pre>';
-// print_r(array_slice($a, 2, 3));
-// echo '</pre>';
+echo '<pre>';
+print_r(array_slice($a, 2, 3));
+echo '</pre>';
 
-// echo '<pre>';
-// print_r(array_slice($a, 2, 3, true));
-// echo '</pre>';
+echo '<pre>';
+print_r(array_slice($a, 2, 3, true));
+echo '</pre>';
 
-// echo '<pre>';
-// print_r(array_slice($a, -3, count($a), true));
-// echo '</pre>';
+echo '<pre>';
+print_r(array_slice($a, -3, count($a), true));
+echo '</pre>';
 
-// echo '<pre>';
-// print_r(array_slice($a, -3, true));
-// echo '</pre>';
+echo '<pre>';
+print_r(array_slice($a, -3, true));
+echo '</pre>';
 
-// echo '<pre>';
-// print_r(array_slice($a, -3, count($a), true));
-// echo '</pre>';
+echo '<pre>';
+print_r(array_slice($a, -3, count($a), true));
+echo '</pre>';
 
-// echo '<pre>';
-// print_r(array_slice($a, -5, -2));
-// echo '</pre>';
+echo '<pre>';
+print_r(array_slice($a, -5, -2));
+echo '</pre>';
 
 // array_splice
 
-// $arr = ['красный', 'зеленый', 'синий', 'желтый'];
-// echo '<pre>';
-// print_r($arr);
-// echo '</pre>';
+$arr = ['красный', 'зеленый', 'синий', 'желтый'];
+echo '<pre>';
+print_r($arr);
+echo '</pre>';
 
-// echo '<pre>';
-// echo '<pre>';
-// print_r(array_splice($arr, 2));
-// echo '</pre>';
-// print_r($arr);
+echo '<pre>';
+echo '<pre>';
+print_r(array_splice($arr, 2));
+echo '</pre>';
+print_r($arr);
 
-// $arr = ['красный', 'зеленый', 'синий', 'желтый'];
-// array_splice($arr, 1, -1); // ['красный', 'желтый']
-// print_r($arr);
+$arr = ['красный', 'зеленый', 'синий', 'желтый'];
+array_splice($arr, 1, -1); // ['красный', 'желтый']
+print_r($arr);
 
-// $arr = ['красный', 'зеленый', 'синий', 'желтый', 'kjhsdfkj', 'sdfkjhskjfh'];
-// print_r(array_splice($arr, 1, 3, [1,2,2,2,2,'оранжевый', 1111]));
-// print_r($arr);
-// echo '</pre>';
+$arr = ['красный', 'зеленый', 'синий', 'желтый', 'kjhsdfkj', 'sdfkjhskjfh'];
+print_r(array_splice($arr, 1, 3, [1,2,2,2,2,'оранжевый', 1111]));
+print_r($arr);
+echo '</pre>';
 
 
 $input = array("red", "green", "blue", "yellow");
